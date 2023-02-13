@@ -5,7 +5,7 @@ Created on Thu Jan 20 10:34:27 2022
 
 """
 
-
+# %%
 from nltk.corpus import words
 import pandas as pd
 from collections import Counter
@@ -32,7 +32,7 @@ word5=word5.reset_index(drop=True)
 word5['word']= word5['word'].astype(str)
  
 
-morewds= pd.read_excel(r'C:/Users/28mac/Documents/Python Code/5worddict.xlsx')
+morewds= pd.read_excel(r'C:/.../5worddict.xlsx')
 morewds= morewds.rename(columns={'aback':'word'})
 word5= word5.append(morewds)
 
@@ -72,7 +72,7 @@ for i in range(len(word5)):
  
 
 
-
+#%%
 ############# MANUAL CODE-----------
 
  
@@ -115,7 +115,7 @@ y4lts=[]
 y5lts=[]
 
 blets=[]   
-nolet= input("Gray letters? :")
+nolet= input("What are the Gray letters? :")
 blets.extend(list(nolet))
 
 
